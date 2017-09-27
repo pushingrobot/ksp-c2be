@@ -1,0 +1,5711 @@
+ship = C2be
+version = 1.3.0
+description = 
+type = VAB
+size = 2.04532194,2.04273224,2.04532194
+PART
+{
+	part = mk1pod_4292441576
+	partName = Part
+	pos = 0,15,0
+	attPos = 0,0,0
+	attPos0 = 0,15,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4292352948
+	link = toroidalFuelTank_4292252912
+	link = radialDecoupler_4287238918
+	link = radialDecoupler_4287227118
+	link = radialDecoupler_4287227058
+	link = radialDecoupler_4287226998
+	attN = bottom,toroidalFuelTank_4292252912
+	attN = top,miniFuelTank_4292352948
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		hibernation = False
+		hibernateOnWarp = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			HibernateToggle
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		actuatorModeCycle = 0
+		authorityLimiter = 100
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CycleAction
+			{
+				actionGroup = None
+			}
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = Light
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceContainer
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CollectAllAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleConductionMultiplier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleLiftingSurface
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 50
+		maxAmount = 50
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 6.0000002384185791
+		maxAmount = 10
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4292352948
+	partName = Part
+	pos = 0,15.8166494,0
+	attPos = 0,0,0
+	attPos0 = 0,0.816649437,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280103972
+	link = miniFuelTank_4280103822
+	link = miniFuelTank_4280103672
+	link = miniFuelTank_4280103522
+	link = parachuteRadial_4280101580
+	attN = bottom,mk1pod_4292441576
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103972
+	partName = Part
+	pos = -0.595776141,15.8166494,-0.593217969
+	attPos = -0.150668651,0.00752162933,-0.148110449
+	attPos0 = -0.44510749,-0.00752162933,-0.44510752
+	rot = 5.84003374E-07,2.9547536E-08,-5.84003317E-07,1
+	attRot = -5.93891865E-14,-0.382683516,5.49161512E-14,-0.923879743
+	attRot0 = 5.84003374E-07,2.9547536E-08,-5.84003317E-07,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280103946
+	sym = miniFuelTank_4280103822
+	sym = miniFuelTank_4280103672
+	sym = miniFuelTank_4280103522
+	srfN = srfAttach,miniFuelTank_4292352948
+	attN = bottom,miniFuelTank_4280103946
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103946
+	partName = Part
+	pos = -0.595776618,15.4681025,-0.593218386
+	attPos = 0,0,0
+	attPos0 = -5.96046448E-08,-0.348546982,-3.7252903E-09
+	rot = -2.13760302E-07,-0.866025507,-7.97763391E-07,0.49999994
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.866025448,0,0.49999997
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280103920
+	sym = miniFuelTank_4280103796
+	sym = miniFuelTank_4280103646
+	sym = miniFuelTank_4280103496
+	attN = top,miniFuelTank_4280103972
+	attN = bottom,miniFuelTank_4280103920
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103920
+	partName = Part
+	pos = -0.595777094,15.1195555,-0.593218803
+	attPos = 0,0,0
+	attPos0 = 2.65761813E-08,-0.348546982,5.34818625E-08
+	rot = -2.13760302E-07,-0.866025507,-7.97763278E-07,0.49999994
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = liquidEngineMini_4280103894
+	sym = miniFuelTank_4280103770
+	sym = miniFuelTank_4280103620
+	sym = miniFuelTank_4280103470
+	attN = top,miniFuelTank_4280103946
+	attN = bottom,liquidEngineMini_4280103894
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = liquidEngineMini_4280103894
+	partName = Part
+	pos = -0.595777392,14.945282,-0.593219042
+	attPos = 0,0,0
+	attPos0 = 2.65762097E-08,-0.174273342,5.34819122E-08
+	rot = 2.13759705E-07,-0.49999997,-7.97763164E-07,0.866025388
+	attRot = 0,0,0,1
+	attRot0 = 0,0.5,0,0.866025448
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = 7
+	sqor = 3
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = liquidEngineMini_4280103744
+	sym = liquidEngineMini_4280103594
+	sym = liquidEngineMini_4280103444
+	attN = top,miniFuelTank_4280103920
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103822
+	partName = Part
+	pos = -0.593217969,15.8166494,0.595776081
+	attPos = -0.148110449,0.00752162933,0.150668651
+	attPos0 = -0.44510752,-0.00752162933,0.44510743
+	rot = 4.01943696E-14,0.707106829,-8.25905488E-07,0.707106829
+	attRot = -5.93891865E-14,-0.382683516,5.49161512E-14,-0.923879743
+	attRot0 = 3.16060351E-07,-0.382683456,7.63037121E-07,-0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280103796
+	sym = miniFuelTank_4280103972
+	sym = miniFuelTank_4280103672
+	sym = miniFuelTank_4280103522
+	srfN = srfAttach,miniFuelTank_4292352948
+	attN = bottom,miniFuelTank_4280103796
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103796
+	partName = Part
+	pos = -0.593218386,15.4681025,0.595776498
+	attPos = 0,0,0
+	attPos0 = -5.96046448E-08,-0.348546982,-3.7252903E-09
+	rot = -7.1525659E-07,-0.258819222,-4.12952403E-07,0.965925813
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.866025448,0,0.49999997
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280103770
+	sym = miniFuelTank_4280103946
+	sym = miniFuelTank_4280103646
+	sym = miniFuelTank_4280103496
+	attN = top,miniFuelTank_4280103822
+	attN = bottom,miniFuelTank_4280103770
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103770
+	partName = Part
+	pos = -0.593218803,15.1195555,0.595777035
+	attPos = 0,0,0
+	attPos0 = 2.65761813E-08,-0.348546982,5.34818625E-08
+	rot = -7.15255055E-07,-0.258819103,-4.12952545E-07,0.965925813
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = liquidEngineMini_4280103744
+	sym = miniFuelTank_4280103920
+	sym = miniFuelTank_4280103620
+	sym = miniFuelTank_4280103470
+	attN = top,miniFuelTank_4280103796
+	attN = bottom,liquidEngineMini_4280103744
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = liquidEngineMini_4280103744
+	partName = Part
+	pos = -0.593219042,14.945282,0.595777333
+	attPos = -1.73490733E-08,-1.49011612E-07,4.67936019E-08
+	attPos0 = 2.65762097E-08,-0.174273342,5.34819122E-08
+	rot = -4.12952829E-07,0.258818984,-7.15254771E-07,0.965925813
+	attRot = 0,0,0,1
+	attRot0 = 0,0.5,0,0.866025448
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = 7
+	sqor = 3
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = liquidEngineMini_4280103894
+	sym = liquidEngineMini_4280103594
+	sym = liquidEngineMini_4280103444
+	attN = top,miniFuelTank_4280103770
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103672
+	partName = Part
+	pos = 0.5957762,15.8166494,0.593217909
+	attPos = 0.150668681,0.00752162933,0.14811042
+	attPos0 = 0.44510752,-0.00752162933,0.44510749
+	rot = -5.84003317E-07,1,-5.84003374E-07,-7.32589243E-08
+	attRot = -5.93891865E-14,-0.382683516,5.49161512E-14,-0.923879743
+	attRot0 = 7.63037178E-07,-0.923879623,3.16060323E-07,-0.382683426
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280103646
+	sym = miniFuelTank_4280103972
+	sym = miniFuelTank_4280103822
+	sym = miniFuelTank_4280103522
+	srfN = srfAttach,miniFuelTank_4292352948
+	attN = bottom,miniFuelTank_4280103646
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103646
+	partName = Part
+	pos = 0.595776677,15.4681025,0.593218327
+	attPos = 0,0,0
+	attPos0 = -5.96046448E-08,-0.348546982,-3.7252903E-09
+	rot = -7.97763505E-07,0.49999997,2.13761268E-07,0.866025448
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.866025448,0,0.49999997
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280103620
+	sym = miniFuelTank_4280103946
+	sym = miniFuelTank_4280103796
+	sym = miniFuelTank_4280103496
+	attN = top,miniFuelTank_4280103672
+	attN = bottom,miniFuelTank_4280103620
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103620
+	partName = Part
+	pos = 0.595777154,15.1195555,0.593218744
+	attPos = 0,0,0
+	attPos0 = 2.65761813E-08,-0.348546982,5.34818625E-08
+	rot = -7.97763505E-07,0.49999997,2.137607E-07,0.866025448
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = liquidEngineMini_4280103594
+	sym = miniFuelTank_4280103920
+	sym = miniFuelTank_4280103770
+	sym = miniFuelTank_4280103470
+	attN = top,miniFuelTank_4280103646
+	attN = bottom,liquidEngineMini_4280103594
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = liquidEngineMini_4280103594
+	partName = Part
+	pos = 0.595777452,14.945282,0.593218982
+	attPos = -1.73492136E-08,-1.49011612E-07,4.67940211E-08
+	attPos0 = 2.65762097E-08,-0.174273342,5.34819122E-08
+	rot = -7.97763278E-07,0.866025507,-2.13760075E-07,0.499999911
+	attRot = 0,0,0,1
+	attRot0 = 0,0.5,0,0.866025448
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = 7
+	sqor = 3
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = liquidEngineMini_4280103894
+	sym = liquidEngineMini_4280103744
+	sym = liquidEngineMini_4280103444
+	attN = top,miniFuelTank_4280103620
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103522
+	partName = Part
+	pos = 0.593217909,15.8166494,-0.595776141
+	attPos = 0.148110449,0.00752162933,-0.150668651
+	attPos0 = 0.44510746,-0.00752162933,-0.44510749
+	rot = -8.25905488E-07,0.707106829,-4.01943696E-14,-0.707106829
+	attRot = -5.93891865E-14,-0.382683516,5.49161512E-14,-0.923879743
+	attRot0 = 7.63037121E-07,-0.923879564,-3.16060351E-07,0.382683456
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280103496
+	sym = miniFuelTank_4280103972
+	sym = miniFuelTank_4280103822
+	sym = miniFuelTank_4280103672
+	srfN = srfAttach,miniFuelTank_4292352948
+	attN = bottom,miniFuelTank_4280103496
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103496
+	partName = Part
+	pos = 0.593218327,15.4681025,-0.595776558
+	attPos = 0,0,0
+	attPos0 = -5.96046448E-08,-0.348546982,-3.7252903E-09
+	rot = -4.1295263E-07,0.965925932,7.15255169E-07,0.258819133
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.866025448,0,0.49999997
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280103470
+	sym = miniFuelTank_4280103946
+	sym = miniFuelTank_4280103796
+	sym = miniFuelTank_4280103646
+	attN = top,miniFuelTank_4280103522
+	attN = bottom,miniFuelTank_4280103470
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280103470
+	partName = Part
+	pos = 0.593218744,15.1195555,-0.595777094
+	attPos = 0,0,0
+	attPos0 = 2.65761813E-08,-0.348546982,5.34818625E-08
+	rot = -4.1295263E-07,0.965925932,7.15255169E-07,0.258819133
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = liquidEngineMini_4280103444
+	sym = miniFuelTank_4280103920
+	sym = miniFuelTank_4280103770
+	sym = miniFuelTank_4280103620
+	attN = top,miniFuelTank_4280103496
+	attN = bottom,liquidEngineMini_4280103444
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = liquidEngineMini_4280103444
+	partName = Part
+	pos = 0.593218923,14.945282,-0.595777333
+	attPos = -1.9220785E-09,-1.49011612E-07,-1.0780024E-08
+	attPos0 = 2.65762097E-08,-0.174273342,5.34819122E-08
+	rot = -7.15255112E-07,0.965925932,4.12952659E-07,-0.258818865
+	attRot = 0,0,0,1
+	attRot0 = 0,0.5,0,0.866025448
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = 7
+	sqor = 3
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = liquidEngineMini_4280103894
+	sym = liquidEngineMini_4280103744
+	sym = liquidEngineMini_4280103594
+	attN = top,miniFuelTank_4280103470
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4292252912
+	partName = Part
+	pos = 0,14.5450993,0
+	attPos = 0,0,0
+	attPos0 = 0,-0.454900742,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = toroidalFuelTank_4280103310
+	attN = top,mk1pod_4292441576
+	attN = bottom,toroidalFuelTank_4280103310
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 27
+		maxAmount = 27
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 33
+		maxAmount = 33
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4280103310
+	partName = Part
+	pos = 0,14.4453735,0
+	attPos = 0,0,0
+	attPos0 = 0,-0.0997255892,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = toroidalFuelTank_4280103248
+	attN = top,toroidalFuelTank_4292252912
+	attN = bottom,toroidalFuelTank_4280103248
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 27
+		maxAmount = 27
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 33
+		maxAmount = 33
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4280103248
+	partName = Part
+	pos = 0,14.3456478,0
+	attPos = 0,0,0
+	attPos0 = 0,-0.0997255892,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = toroidalFuelTank_4280103186
+	attN = top,toroidalFuelTank_4280103310
+	attN = bottom,toroidalFuelTank_4280103186
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 27
+		maxAmount = 27
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 33
+		maxAmount = 33
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = toroidalFuelTank_4280103186
+	partName = Part
+	pos = 0,14.2459221,0
+	attPos = 0,0,0
+	attPos0 = 0,-0.0997255892,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = liquidEngineMini_4280103124
+	attN = top,toroidalFuelTank_4280103248
+	attN = bottom,liquidEngineMini_4280103124
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 27
+		maxAmount = 27
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 33
+		maxAmount = 33
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = liquidEngineMini_4280103124
+	partName = Part
+	pos = 0,14.4453011,0
+	attPos = 0,0.249241829,0
+	attPos0 = 0,-0.0498628616,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = 6
+	sqor = 2
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,toroidalFuelTank_4280103186
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleJettison
+		isEnabled = True
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		isEnabled = True
+		gimbalLock = False
+		gimbalLimiter = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		gimbalActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			LockAction
+			{
+				actionGroup = None
+			}
+			FreeAction
+			{
+				actionGroup = None
+			}
+			TogglePitchAction
+			{
+				actionGroup = None
+			}
+			ToggleYawAction
+			{
+				actionGroup = None
+			}
+			ToggleRollAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = radialDecoupler_4287238918
+	partName = Part
+	pos = 0.00419643894,15.5369682,0.436256886
+	attPos = 0.0785940588,0.132008553,-4.65661287E-10
+	attPos0 = 0.357654989,0.405356407,-0.00419643428
+	rot = -6.18172464E-08,-0.707106829,-6.18172464E-08,-0.707106829
+	attRot = 1.31991342E-07,-3.63542313E-07,0.339350194,0.940660417
+	attRot0 = -0.0198575184,0.999802887,7.60292007E-09,-3.42966246E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280102852
+	sym = radialDecoupler_4287227118
+	sym = radialDecoupler_4287227058
+	sym = radialDecoupler_4287226998
+	srfN = srfAttach,mk1pod_4292441576
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = radialDecoupler_4287227118
+	partName = Part
+	pos = 0.436256915,15.5369682,-0.0041965032
+	attPos = 4.19095159E-09,0.132008553,-0.0785940588
+	attPos0 = -0.00419641286,0.405356407,-0.357654959
+	rot = -8.74227766E-08,-1,3.82137093E-15,4.37113883E-08
+	attRot = 1.31991342E-07,-3.63542313E-07,0.339350194,0.940660417
+	attRot0 = -0.128708899,0.695293963,0.128708988,-0.69529444
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280102614
+	sym = radialDecoupler_4287238918
+	sym = radialDecoupler_4287227058
+	sym = radialDecoupler_4287226998
+	srfN = srfAttach,mk1pod_4292441576
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = radialDecoupler_4287227058
+	partName = Part
+	pos = -0.436256915,15.5369682,0.00419646502
+	attPos = -0.0785940588,0.132008553,7.4505806E-09
+	attPos0 = -0.357654989,0.405356407,0.00419646548
+	rot = 0,0,-8.74227766E-08,-1
+	attRot = 1.31991342E-07,-3.63542313E-07,0.339350194,0.940660417
+	attRot0 = 0,0,-8.74227766E-08,-1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280102376
+	sym = radialDecoupler_4287238918
+	sym = radialDecoupler_4287227118
+	sym = radialDecoupler_4287226998
+	srfN = srfAttach,mk1pod_4292441576
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = radialDecoupler_4287226998
+	partName = Part
+	pos = -0.00419649063,15.5369682,-0.436256886
+	attPos = 5.12227416E-09,0.132008553,0.0785940588
+	attPos0 = 0.00419645524,0.405356407,0.357654959
+	rot = -6.18172464E-08,-0.707106829,6.18172464E-08,0.707106829
+	attRot = 1.31991342E-07,-3.63542313E-07,0.339350194,0.940660417
+	attRot0 = 0.128708988,-0.69529444,0.128708899,-0.695293963
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280102138
+	sym = radialDecoupler_4287238918
+	sym = radialDecoupler_4287227118
+	sym = radialDecoupler_4287227058
+	srfN = srfAttach,mk1pod_4292441576
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnchoredDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			EnableAction
+			{
+				actionGroup = None
+			}
+			DisableAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102852
+	partName = Part
+	pos = 0.00667396607,15.1126213,0.808225393
+	attPos = -0.210657626,-0.0776597559,0.139844045
+	attPos0 = -0.161309719,-0.346687317,-0.137366548
+	rot = -0.707107008,5.96046448E-08,7.10542736E-15,-0.707106769
+	attRot = 0.49999994,-0.49999994,0.49999994,0.49999994
+	attRot0 = 0.49999994,-0.5,0.50000006,0.49999994
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280102826
+	link = miniFuelTank_4280102800
+	sym = miniFuelTank_4280102614
+	sym = miniFuelTank_4280102376
+	sym = miniFuelTank_4280102138
+	srfN = srfAttach,radialDecoupler_4287238918
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102826
+	partName = Part
+	pos = 0.00667411508,15.7324791,0.811999559
+	attPos = 1.29178147E-07,0.00654316694,0.000258922577
+	attPos0 = -2.23633862E-07,-0.00276929233,-0.620117188
+	rot = 0.500000894,-0.499999464,-0.500000119,0.499999911
+	attRot = 0,0,0,1
+	attRot0 = -7.1525568E-07,0.707106769,8.04662591E-07,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = miniFuelTank_4280102588
+	sym = miniFuelTank_4280102350
+	sym = miniFuelTank_4280102112
+	srfN = srfAttach,miniFuelTank_4280102852
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102800
+	partName = Part
+	pos = 0.00667223753,14.4783983,0.785620034
+	attPos = -1.0523122E-06,-0.0500717014,0.014662087
+	attPos0 = -2.25845753E-07,0.027466068,0.619560242
+	rot = 0.499999523,0.500000834,-0.499999613,-0.500000477
+	attRot = 0.999999881,0,0,0
+	attRot0 = -0.707106769,-7.0407981E-07,0.707106888,8.08387881E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = sepMotor1_4280102774
+	link = sepMotor1_4280102734
+	link = sepMotor1_4280102694
+	link = sepMotor1_4280102654
+	link = sepMotor1_4280101900
+	link = sepMotor1_4280101700
+	sym = miniFuelTank_4280102562
+	sym = miniFuelTank_4280102324
+	sym = miniFuelTank_4280102086
+	srfN = srfAttach,miniFuelTank_4280102852
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102774
+	partName = Part
+	pos = -0.295495242,14.4783983,0.880983114
+	attPos = 0,0,0
+	attPos0 = 3.23177971E-07,-0.0953591391,0.302162468
+	rot = 9.46901139E-07,-0.707106471,-8.20460514E-07,0.707107306
+	attRot = 0,0,0.707106709,-0.707106709
+	attRot0 = -7.45057946E-07,-6.33300203E-07,0.707106769,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 1
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102536
+	sym = sepMotor1_4280102298
+	sym = sepMotor1_4280102060
+	srfN = srfAttach,miniFuelTank_4280102800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102734
+	partName = Part
+	pos = 0.309498012,14.4783974,0.879236937
+	attPos = 0,0,0
+	attPos0 = -2.76602719E-07,-0.0936129242,-0.302819043
+	rot = 6.30799718E-07,0.707107365,6.72946726E-07,0.707106411
+	attRot = 0,0,0.707106709,0.707106709
+	attRot0 = -0.70710665,-0.707107067,-6.25848713E-07,7.39470693E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102496
+	sym = sepMotor1_4280102258
+	sym = sepMotor1_4280102020
+	srfN = srfAttach,miniFuelTank_4280102800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102694
+	partName = Part
+	pos = 0.309647948,14.4783983,0.756185055
+	attPos = 0,0,0
+	attPos0 = -3.6098038E-07,0.0294337962,-0.302969217
+	rot = 6.30799718E-07,0.707107365,6.72946726E-07,0.707106411
+	attRot = 0,0,0.707106709,0.707106709
+	attRot0 = -0.70710665,-0.707107067,-6.25848713E-07,7.39470693E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 2
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102456
+	sym = sepMotor1_4280102218
+	sym = sepMotor1_4280101980
+	srfN = srfAttach,miniFuelTank_4280102800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102654
+	partName = Part
+	pos = -0.295981586,14.4783983,0.750553668
+	attPos = 0,0,0
+	attPos0 = 2.23019725E-07,0.0350653194,0.30264762
+	rot = -9.46901139E-07,0.707106471,8.20460514E-07,-0.707107306
+	attRot = 0,0,-0.707106709,0.707106709
+	attRot0 = 7.45057946E-07,6.33300203E-07,-0.707106769,0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 3
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102416
+	sym = sepMotor1_4280102178
+	sym = sepMotor1_4280101940
+	srfN = srfAttach,miniFuelTank_4280102800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102614
+	partName = Part
+	pos = 0.808223903,15.1126213,-0.00667391345
+	attPos = -0.210657477,-0.0776597261,0.139844
+	attPos0 = -0.161309659,-0.346687317,-0.137366533
+	rot = -0.49999994,-0.49999997,0.50000006,-0.500000119
+	attRot = 0.49999994,-0.49999994,0.49999994,0.49999994
+	attRot0 = 0.5,-0.5,0.50000006,0.499999881
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280102588
+	link = miniFuelTank_4280102562
+	sym = miniFuelTank_4280102852
+	sym = miniFuelTank_4280102376
+	sym = miniFuelTank_4280102138
+	srfN = srfAttach,radialDecoupler_4287227118
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102588
+	partName = Part
+	pos = 0.811997414,15.7324791,-0.00667439029
+	attPos = 1.09540913E-07,0.00654297974,0.000258982182
+	attPos0 = -2.23633862E-07,-0.00276929233,-0.620117188
+	rot = 5.94940161E-07,4.48141037E-07,-0.707107723,0.707106054
+	attRot = 0,0,0,1
+	attRot0 = -7.1525568E-07,0.707106769,8.04662591E-07,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = miniFuelTank_4280102826
+	sym = miniFuelTank_4280102350
+	sym = miniFuelTank_4280102112
+	srfN = srfAttach,miniFuelTank_4280102614
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102562
+	partName = Part
+	pos = 0.785617948,14.4783983,-0.00667218305
+	attPos = -1.03434036E-06,-0.0500720143,0.0146620274
+	attPos0 = -2.25845753E-07,0.027466068,0.619560242
+	rot = 4.4063011E-08,7.38652872E-08,-0.707105815,-0.707107842
+	attRot = 0.999999881,0,0,0
+	attRot0 = -0.707106769,-7.0407981E-07,0.707106888,8.08387881E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = sepMotor1_4280102536
+	link = sepMotor1_4280102496
+	link = sepMotor1_4280102456
+	link = sepMotor1_4280102416
+	link = sepMotor1_4280101860
+	link = sepMotor1_4280101740
+	sym = miniFuelTank_4280102800
+	sym = miniFuelTank_4280102324
+	sym = miniFuelTank_4280102086
+	srfN = srfAttach,miniFuelTank_4280102614
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102536
+	partName = Part
+	pos = 0.880980194,14.4783983,0.295494378
+	attPos = 0,0,0
+	attPos0 = 3.23177971E-07,-0.0953591391,0.302162468
+	rot = 5.96046945E-08,1.11659494E-06,-9.81492462E-07,1.00000012
+	attRot = 0,0,0.707106709,-0.707106709
+	attRot0 = -7.45057946E-07,-6.33300203E-07,0.707106769,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 1
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102774
+	sym = sepMotor1_4280102298
+	sym = sepMotor1_4280102060
+	srfN = srfAttach,miniFuelTank_4280102562
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102496
+	partName = Part
+	pos = 0.879233479,14.4783974,-0.309496909
+	attPos = 0,0,0
+	attPos0 = -2.76602719E-07,-0.0936129242,-0.302819043
+	rot = 1.11560291E-06,1.00000012,1.93715152E-07,-1.20600191E-06
+	attRot = 0,0,0.707106709,0.707106709
+	attRot0 = -0.70710665,-0.707107067,-6.25848713E-07,7.39470693E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102734
+	sym = sepMotor1_4280102258
+	sym = sepMotor1_4280102020
+	srfN = srfAttach,miniFuelTank_4280102562
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102456
+	partName = Part
+	pos = 0.75618279,14.4783983,-0.309646875
+	attPos = 0,0,0
+	attPos0 = -3.6098038E-07,0.0294337962,-0.302969217
+	rot = 1.11560291E-06,1.00000012,1.93715152E-07,-1.20600191E-06
+	attRot = 0,0,0.707106709,0.707106709
+	attRot0 = -0.70710665,-0.707107067,-6.25848713E-07,7.39470693E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 2
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102694
+	sym = sepMotor1_4280102218
+	sym = sepMotor1_4280101980
+	srfN = srfAttach,miniFuelTank_4280102562
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102416
+	partName = Part
+	pos = 0.750551939,14.4783993,0.295980811
+	attPos = 0,0,0
+	attPos0 = 2.23019725E-07,0.0350653194,0.30264762
+	rot = -5.96046945E-08,-1.11659494E-06,9.81492462E-07,-1.00000012
+	attRot = 0,0,-0.707106709,0.707106709
+	attRot0 = 7.45057946E-07,6.33300203E-07,-0.707106769,0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 3
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102654
+	sym = sepMotor1_4280102178
+	sym = sepMotor1_4280101940
+	srfN = srfAttach,miniFuelTank_4280102562
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102376
+	partName = Part
+	pos = -0.808223963,15.1126213,0.00667396188
+	attPos = -0.210657403,-0.0776597559,0.139844045
+	attPos0 = -0.161309734,-0.346687287,-0.137366548
+	rot = -0.5,0.5,-0.500000119,-0.49999994
+	attRot = 0.49999994,-0.49999994,0.49999994,0.49999994
+	attRot0 = 0.5,-0.5,0.50000006,0.499999911
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280102350
+	link = miniFuelTank_4280102324
+	sym = miniFuelTank_4280102852
+	sym = miniFuelTank_4280102614
+	sym = miniFuelTank_4280102138
+	srfN = srfAttach,radialDecoupler_4287227058
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102350
+	partName = Part
+	pos = -0.811997771,15.7324791,0.00667384267
+	attPos = 1.05588697E-07,0.00654298253,0.000258862972
+	attPos0 = -2.23633862E-07,-0.00276929233,-0.620117188
+	rot = 0.707107484,-0.707106173,7.15255794E-07,5.06639424E-07
+	attRot = 0,0,0,1
+	attRot0 = -7.1525568E-07,0.707106769,8.04662591E-07,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = miniFuelTank_4280102826
+	sym = miniFuelTank_4280102588
+	sym = miniFuelTank_4280102112
+	srfN = srfAttach,miniFuelTank_4280102376
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102324
+	partName = Part
+	pos = -0.785617948,14.4783983,0.00667271018
+	attPos = -1.03144009E-06,-0.0500719696,0.0146622062
+	attPos0 = -2.25845753E-07,0.027466068,0.619560242
+	rot = 0.707105994,0.707107663,6.44430287E-08,1.24047801E-07
+	attRot = 0.999999881,0,0,0
+	attRot0 = -0.707106769,-7.0407981E-07,0.707106888,8.08387881E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = sepMotor1_4280102298
+	link = sepMotor1_4280102258
+	link = sepMotor1_4280102218
+	link = sepMotor1_4280102178
+	link = sepMotor1_4280101820
+	link = sepMotor1_4280101660
+	sym = miniFuelTank_4280102800
+	sym = miniFuelTank_4280102562
+	sym = miniFuelTank_4280102086
+	srfN = srfAttach,miniFuelTank_4280102376
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102298
+	partName = Part
+	pos = -0.880980015,14.4783983,-0.295492977
+	attPos = 0,0,0
+	attPos0 = 3.23177971E-07,-0.0953591391,0.302162468
+	rot = 1.02619595E-06,-1.00000012,1.49012376E-08,8.64267349E-07
+	attRot = 0,0,0.707106709,-0.707106709
+	attRot0 = -7.45057946E-07,-6.33300203E-07,0.707106769,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 1
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102774
+	sym = sepMotor1_4280102536
+	sym = sepMotor1_4280102060
+	srfN = srfAttach,miniFuelTank_4280102324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102258
+	partName = Part
+	pos = -0.879233539,14.4783983,0.309496433
+	attPos = 0,0,0
+	attPos0 = -2.76602719E-07,-0.0936129242,-0.302819043
+	rot = -8.94070311E-08,7.15255737E-07,1.01129478E-06,1.00000012
+	attRot = 0,0,0.707106709,0.707106709
+	attRot0 = -0.70710665,-0.707107067,-6.25848713E-07,7.39470693E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102734
+	sym = sepMotor1_4280102496
+	sym = sepMotor1_4280102020
+	srfN = srfAttach,miniFuelTank_4280102324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102218
+	partName = Part
+	pos = -0.756183147,14.4783983,0.309646755
+	attPos = 0,0,0
+	attPos0 = -3.6098038E-07,0.0294337962,-0.302969217
+	rot = -8.94070311E-08,7.15255737E-07,1.01129478E-06,1.00000012
+	attRot = 0,0,0.707106709,0.707106709
+	attRot0 = -0.70710665,-0.707107067,-6.25848713E-07,7.39470693E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 2
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102694
+	sym = sepMotor1_4280102456
+	sym = sepMotor1_4280101980
+	srfN = srfAttach,miniFuelTank_4280102324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102178
+	partName = Part
+	pos = -0.750552177,14.4783993,-0.295979112
+	attPos = 0,0,0
+	attPos0 = 2.23019725E-07,0.0350653194,0.30264762
+	rot = -1.02619595E-06,1.00000012,-1.49012376E-08,-8.64267349E-07
+	attRot = 0,0,-0.707106709,0.707106709
+	attRot0 = 7.45057946E-07,6.33300203E-07,-0.707106769,0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 3
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102654
+	sym = sepMotor1_4280102416
+	sym = sepMotor1_4280101940
+	srfN = srfAttach,miniFuelTank_4280102324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102138
+	partName = Part
+	pos = -0.00667395815,15.1126213,-0.808224082
+	attPos = -0.210657433,-0.0776597261,0.13984403
+	attPos0 = -0.161309704,-0.346687317,-0.137366533
+	rot = -9.05132538E-08,-0.70710665,0.707107067,-1.1920929E-07
+	attRot = 0.49999994,-0.49999994,0.49999994,0.49999994
+	attRot0 = 0.5,-0.50000006,0.500000119,0.499999911
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = miniFuelTank_4280102112
+	link = miniFuelTank_4280102086
+	sym = miniFuelTank_4280102852
+	sym = miniFuelTank_4280102614
+	sym = miniFuelTank_4280102376
+	srfN = srfAttach,radialDecoupler_4287226998
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102112
+	partName = Part
+	pos = -0.00667380914,15.7324791,-0.811998129
+	attPos = 1.16685001E-07,0.00654298067,0.000258922577
+	attPos0 = -2.23633862E-07,-0.00276929233,-0.620117188
+	rot = -0.499999881,0.50000006,-0.500000954,0.499999315
+	attRot = 0,0,0,1
+	attRot0 = -7.1525568E-07,0.707106769,8.04662591E-07,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = miniFuelTank_4280102826
+	sym = miniFuelTank_4280102588
+	sym = miniFuelTank_4280102350
+	srfN = srfAttach,miniFuelTank_4280102138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = miniFuelTank_4280102086
+	partName = Part
+	pos = -0.00667270645,14.4783993,-0.785617828
+	attPos = -1.04234073E-06,-0.0500718392,0.014662087
+	attPos0 = -2.25845753E-07,0.027466068,0.619560242
+	rot = -0.499999374,-0.500000715,-0.499999404,-0.500000834
+	attRot = 0.999999881,0,0,0
+	attRot0 = -0.707106769,-7.0407981E-07,0.707106888,8.08387881E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = sepMotor1_4280102060
+	link = sepMotor1_4280102020
+	link = sepMotor1_4280101980
+	link = sepMotor1_4280101940
+	link = sepMotor1_4280101780
+	link = sepMotor1_4280101620
+	sym = miniFuelTank_4280102800
+	sym = miniFuelTank_4280102562
+	sym = miniFuelTank_4280102324
+	srfN = srfAttach,miniFuelTank_4280102138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 18
+		maxAmount = 18
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 22
+		maxAmount = 22
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102060
+	partName = Part
+	pos = 0.295493305,14.4783993,-0.880980253
+	attPos = 0,0,0
+	attPos0 = 3.23177971E-07,-0.0953591391,0.302162468
+	rot = -5.14895817E-07,0.707107365,-8.30997351E-07,0.707106292
+	attRot = 0,0,0.707106709,-0.707106709
+	attRot0 = -7.45057946E-07,-6.33300203E-07,0.707106769,-0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 1
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102774
+	sym = sepMotor1_4280102536
+	sym = sepMotor1_4280102298
+	srfN = srfAttach,miniFuelTank_4280102086
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280102020
+	partName = Part
+	pos = -0.309497178,14.4783993,-0.879233837
+	attPos = 0,0,0
+	attPos0 = -2.76602719E-07,-0.0936129242,-0.302819043
+	rot = 8.73144245E-07,0.707106411,-5.14895873E-07,-0.707107365
+	attRot = 0,0,0.707106709,0.707106709
+	attRot0 = -0.70710665,-0.707107067,-6.25848713E-07,7.39470693E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102734
+	sym = sepMotor1_4280102496
+	sym = sepMotor1_4280102258
+	srfN = srfAttach,miniFuelTank_4280102086
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280101980
+	partName = Part
+	pos = -0.309647292,14.4783983,-0.756182909
+	attPos = 0,0,0
+	attPos0 = -3.6098038E-07,0.0294337962,-0.302969217
+	rot = 8.73144245E-07,0.707106411,-5.14895873E-07,-0.707107365
+	attRot = 0,0,0.707106709,0.707106709
+	attRot0 = -0.70710665,-0.707107067,-6.25848713E-07,7.39470693E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 2
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102694
+	sym = sepMotor1_4280102456
+	sym = sepMotor1_4280102218
+	srfN = srfAttach,miniFuelTank_4280102086
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280101940
+	partName = Part
+	pos = 0.29597953,14.4784002,-0.750551939
+	attPos = 0,0,0
+	attPos0 = 2.23019725E-07,0.0350653194,0.30264762
+	rot = 5.14895817E-07,-0.707107365,8.30997351E-07,-0.707106292
+	attRot = 0,0,-0.707106709,0.707106709
+	attRot0 = 7.45057946E-07,6.33300203E-07,-0.707106769,0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 3
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280102654
+	sym = sepMotor1_4280102416
+	sym = sepMotor1_4280102178
+	srfN = srfAttach,miniFuelTank_4280102086
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280101900
+	partName = Part
+	pos = 0.161601409,14.5204124,0.621831179
+	attPos = -0.00830814242,-0.0921421051,0.0611397773
+	attPos0 = 0.0420133844,0.163786992,-0.15492785
+	rot = -0.0140394559,0.70696789,0.0140415588,0.706967056
+	attRot = 0,-0.707106709,0,0.707106709
+	attRot0 = -0.706967413,-0.706967413,-0.014041096,-0.0140398871
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 4
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280101860
+	sym = sepMotor1_4280101820
+	sym = sepMotor1_4280101780
+	srfN = srfAttach,miniFuelTank_4280102800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280101860
+	partName = Part
+	pos = 0.621829927,14.5204124,-0.161600202
+	attPos = -0.00830814242,-0.0921421051,0.0611397773
+	attPos0 = 0.0420133844,0.163787201,-0.154927954
+	rot = 1.78700589E-06,0.999802947,0.0198565423,-1.30856552E-06
+	attRot = 0,-0.707106709,0,0.707106709
+	attRot0 = -0.706967473,-0.706967354,-0.0140411556,-0.0140399169
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 4
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280101900
+	sym = sepMotor1_4280101820
+	sym = sepMotor1_4280101780
+	srfN = srfAttach,miniFuelTank_4280102562
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280101820
+	partName = Part
+	pos = -0.621830523,14.5204124,0.161600918
+	attPos = -0.00830814242,-0.0921421051,0.0611397773
+	attPos0 = 0.042013444,0.163787141,-0.154927909
+	rot = -0.0198561102,7.13519853E-07,1.63712627E-06,0.999802947
+	attRot = 0,-0.707106709,0,0.707106709
+	attRot0 = -0.706967413,-0.706967413,-0.014041096,-0.0140398871
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 4
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280101900
+	sym = sepMotor1_4280101860
+	sym = sepMotor1_4280101780
+	srfN = srfAttach,miniFuelTank_4280102324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280101780
+	partName = Part
+	pos = -0.16160132,14.5204134,-0.62182951
+	attPos = -0.00830814242,-0.0921421051,0.0611397773
+	attPos0 = 0.0420135036,0.163787246,-0.154927954
+	rot = 0.0140415588,0.706966877,0.0140396664,-0.706968188
+	attRot = 0,-0.707106709,0,0.707106709
+	attRot0 = -0.706967413,-0.706967473,-0.0140411537,-0.0140399169
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 4
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280101900
+	sym = sepMotor1_4280101860
+	sym = sepMotor1_4280101820
+	srfN = srfAttach,miniFuelTank_4280102086
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280101740
+	partName = Part
+	pos = 0.621830225,14.5020723,0.132522017
+	attPos = -0.0570207089,-0.0772066116,0.0427688062
+	attPos0 = 0.0236732233,0.163786545,0.139192998
+	rot = -1.34110493E-07,-1.14639727E-06,1.26461453E-06,-1.00000012
+	attRot = 0,0.707106769,0,0.707106769
+	attRot0 = 5.66244069E-07,7.20844298E-07,-0.707106888,0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 5
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280101700
+	sym = sepMotor1_4280101660
+	sym = sepMotor1_4280101620
+	srfN = srfAttach,miniFuelTank_4280102562
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280101700
+	partName = Part
+	pos = -0.132521749,14.5020714,0.621831357
+	attPos = -0.0570207089,-0.0772066116,0.0427688062
+	attPos0 = 0.0236732829,0.163786635,0.139193088
+	rot = -1.13656199E-06,0.707106113,1.13656176E-06,-0.707107663
+	attRot = 0,0.707106769,0,0.707106769
+	attRot0 = 5.06639367E-07,7.50646507E-07,-0.707106888,0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 5
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280101740
+	sym = sepMotor1_4280101660
+	sym = sepMotor1_4280101620
+	srfN = srfAttach,miniFuelTank_4280102800
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280101660
+	partName = Part
+	pos = -0.621830463,14.5020714,-0.132520527
+	attPos = -0.0570207089,-0.0772066116,0.0427688062
+	attPos0 = 0.0236733425,0.163786724,0.139193028
+	rot = -1.6967482E-06,1,-2.98024183E-08,-1.10268593E-06
+	attRot = 0,0.707106769,0,0.707106769
+	attRot0 = 5.06639367E-07,7.50646507E-07,-0.707106888,0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 5
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280101740
+	sym = sepMotor1_4280101700
+	sym = sepMotor1_4280101620
+	srfN = srfAttach,miniFuelTank_4280102324
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = sepMotor1_4280101620
+	partName = Part
+	pos = 0.132520288,14.5020733,-0.621830642
+	attPos = -0.0570207089,-0.0772066116,0.0427688062
+	attPos0 = 0.0236734021,0.163786769,0.139193058
+	rot = 9.25827635E-07,-0.707107544,1.09441521E-06,-0.707106113
+	attRot = 0,0.707106769,0,0.707106769
+	attRot0 = 5.96046391E-07,7.50646677E-07,-0.707106888,0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 5
+	sqor = 3
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = sepMotor1_4280101740
+	sym = sepMotor1_4280101700
+	sym = sepMotor1_4280101660
+	srfN = srfAttach,miniFuelTank_4280102086
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 8
+		maxAmount = 8
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = parachuteRadial_4280101580
+	partName = Part
+	pos = -0.0114792492,15.9804363,-0.0313249007
+	attPos = 0,0,0
+	attPos0 = -0.0114792492,0.163786888,-0.0313249007
+	rot = 0,0.707107484,-0.707106054,1.0369364E-08
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707107484,-0.707106054,1.0369364E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 0
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,miniFuelTank_4292352948
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1250
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
